@@ -55,7 +55,7 @@ export default function AuthPage({ onAuth }) {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: "http://localhost:5173",
+        redirectTo: "hack-srm-one.vercel.app",
         queryParams: { prompt: "select_account" },
       },
     });
