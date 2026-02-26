@@ -56,14 +56,6 @@ HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_token_here
 
 **Note:** Ensure that `HUGGINGFACEHUB_API_TOKEN` is correctly passed to the backend service. You may need to add it to `docker-compose.yml` or ensure your `.env` file is loaded by Docker Compose.
 
-### 3. Run with Docker Compose
-
-Build and start the services:
-
-```bash
-docker-compose up --build
-```
-
 Access the application:
 - **Frontend**: http://localhost:3000
 - **Backend API**: http://localhost:8000
@@ -87,7 +79,6 @@ hackSRM/
 
 - `POST /tree/generate`: Generate a skill tree for a given topic.
 - `GET /node/{id}/content`: Get learning content for a node.
-- `POST /node/{id}/verify`: Verify answer for a node quiz.
 - `GET /health`: Health check.
 
 ## 🤝 Contributing
