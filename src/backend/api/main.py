@@ -22,7 +22,7 @@ app = FastAPI(
 # Allow CORS for Next.js frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Adjust this to point to the Next.js frontend in production
+    allow_origins=["https://hack-srm-one.vercel.app"],  # Adjust this to point to the Next.js frontend in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
