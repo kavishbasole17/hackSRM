@@ -12,7 +12,8 @@ import FriendsPage from './components/FriendsPage';
 import Footer from './components/Footer';
 import './index.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const API_URL = import.meta.env.VITE_API_URL || 'https://hacksrm-mbcr.onrender.com';
+
 
 function loadCompleted() {
   try { return JSON.parse(localStorage.getItem('pathways_completed') || '{}'); } catch { return {}; }
